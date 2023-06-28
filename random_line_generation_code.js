@@ -37,7 +37,7 @@ const randomlinegen = (day, month, year) => {
    verb = verblist[Math.floor(monthVar*Math.random())]
 
    
-    
+    year = Math.floor(year*Math.random())
    if (year % 3 == 0)
     adj = "crazily";
    else if (year % 4 == 0)
@@ -60,4 +60,4 @@ const randomlinegen = (day, month, year) => {
    return noun + verb + adj ;
 }  
 
-console.log(randomlinegen(5, september, 2002))
+console.log(randomlinegen(20, "september", 2004))
